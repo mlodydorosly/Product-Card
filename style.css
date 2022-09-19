@@ -1,0 +1,159 @@
+:root{
+    /* Primary */
+
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Font-family */
+
+    --Font-Monserrat:  'Montserrat', sans-serif;
+    --Font-Fraunces: 'Fraunces', serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Cream);
+}
+
+.card-screen{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    font-size: 15px;
+}
+.card-images img{
+    width:100%;
+    max-width: 100%;
+    min-width: 275px;
+
+}
+.card-img-mobile{
+
+    display: block;
+}
+
+.card-img-desktop{
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    display: none;
+}
+
+.card-info{
+    border-radius: 0 10px 10px 0;
+    background-color: var(--White);
+    padding: 20px 20px;
+
+}
+
+.card-category{
+    text-transform: uppercase;
+    font: 1rem var(--Font-Monserrat);
+    color: var(--Dark-grayish-blue);
+    line-height: 3px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.card-tittle{
+    font: 2rem var(--Font-Fraunces);
+    color: var(--Very-dark-blue);
+    font-weight: 700;
+    margin: 20px 0;
+    max-width: 80%;
+}
+
+.card-description{
+    font: 1.2rem var(--Font-Monserrat);
+    font-weight: 400;
+    color: --Dark-grayish-blue;
+}
+
+
+.card-actual-price{
+    font: 2.4rem var(--Font-Fraunces);
+    color: var(--Dark-cyan);
+    font-weight: 700;
+}
+
+sup{
+    font-size: 1rem;
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+.card-button{
+    display: block;
+    background: none;
+    background-color: var(--Dark-cyan);
+    color: white;
+    width: 100%;
+    height: 60px;
+    border: none;
+    font: 1.2rem var(--Font-Monserrat);
+    border-radius: 10px;
+    transition: background-color 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.card-button:hover, .card-button:active {
+    background-color: hsl(160, 60%, 28%);
+}
+
+.attribution{
+    margin-top: 15px;
+}
+.attribution a{
+    font: 0.8rem var(--Font-Monserrat);
+    text-decoration: none;
+    color:  #3685ff;
+    font-weight: 700;
+    transition: color 300ms ease-in-out;
+}
+
+.attribution a:hover, .attribution a:focus{
+    color: #2f75dd;
+}
+
+
+
+
+
+
+@media screen and (min-width:727px) {
+    .card-img-desktop{
+        display: block;
+    }
+    .card-img-mobile{
+        display: none;
+    }
+    .card-screen {
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
