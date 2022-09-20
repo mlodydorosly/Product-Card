@@ -28,132 +28,95 @@ body{
 }
 
 .card-screen{
+    max-width: 375px;
     display: flex;
     flex-direction: column;
-    max-width: 450px;
+    background-color: white;
     font-size: 15px;
+    border-radius: 0.6rem;
 }
-.card-images img{
-    width:100%;
+
+.card-images{
+    width: 100%;
     max-width: 100%;
-    min-width: 275px;
-
-}
-.card-img-mobile{
-
-    display: block;
 }
 
-.card-img-desktop{
-    height: 100%;
-    border-radius: 10px 0px 0px 10px;
-    display: none;
+.card-images img{
+    width: 100%;
+    min-height: 100%;
+    border-radius: 0.6rem 0.6rem 0 0;
 }
 
-.card-info{
-    border-radius: 0 10px 10px 0;
-    background-color: var(--White);
-    padding: 20px 20px;
 
-}
 
 .card-category{
+    font: 0.9rem var(--Font-Monserrat);
+    font-weight: 500;
     text-transform: uppercase;
-    font: 1rem var(--Font-Monserrat);
     color: var(--Dark-grayish-blue);
-    line-height: 3px;
-    letter-spacing: 5px;
-    font-weight: 400;
+    letter-spacing: 0.3rem;
+    margin: 1.5rem 1.5rem;
 }
 
 .card-tittle{
-    font: 2rem var(--Font-Fraunces);
-    color: var(--Very-dark-blue);
-    font-weight: 700;
-    margin: 20px 0;
+    font: 2.8rem var(--Font-Fraunces);
+    line-height: 2.8rem;
+    padding: 0;
+    margin: 1.5rem 1.5rem;
+    max-width: 75%;
+}
+
+.card-description {
+    font: 1rem var(--Font-Monserrat);
+    color: var(--Dark-grayish-blue);
+    margin: 1.5rem 1.5rem;
+    letter-spacing: 1.1px;
     max-width: 80%;
-}
 
-.card-description{
-    font: 1.2rem var(--Font-Monserrat);
-    font-weight: 400;
-    color: --Dark-grayish-blue;
 }
-
 
 .card-actual-price{
-    font: 2.4rem var(--Font-Fraunces);
+    font: 2rem var(--Font-Fraunces);
     color: var(--Dark-cyan);
-    font-weight: 700;
+    margin: 1rem 1.5rem 0rem 1.5rem;
 }
 
-sup{
-    font-size: 1rem;
-    color: var(--Dark-grayish-blue);
+.card-actual-price sup{
+    font-size: 0.9rem;
     text-decoration: line-through;
-    margin-left: 20px;
+    color: var(--Dark-grayish-blue);
+    margin: 0 1rem;
 }
 
 .card-button{
-    display: block;
-    background: none;
+    margin: auto 0;
+    width: 90%;
+    padding: 20px;
+    font: 1rem  var(--Font-Monserrat);
     background-color: var(--Dark-cyan);
-    color: white;
-    width: 100%;
-    height: 60px;
-    border: none;
-    font: 1.2rem var(--Font-Monserrat);
     border-radius: 10px;
-    transition: background-color 300ms ease-in-out;
     cursor: pointer;
+    border: none;
+    color: white;
+    transition: background-color 300ms ease-in-out;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 
-.card-button:hover, .card-button:active {
-    background-color: hsl(160, 60%, 28%);
+.card-button:hover, .card-button:active
+{
+    background-color: hsl(158, 36%, 32%);
 }
 
-.attribution{
-    margin-top: 15px;
-}
-.attribution a{
-    font: 0.8rem var(--Font-Monserrat);
-    text-decoration: none;
-    color:  #3685ff;
-    font-weight: 700;
-    transition: color 300ms ease-in-out;
-}
-
-.attribution a:hover, .attribution a:focus{
-    color: #2f75dd;
-}
-
-
-
-
-
-
-@media screen and (min-width:727px) {
-    .card-img-desktop{
-        display: block;
-    }
-    .card-img-mobile{
-        display: none;
-    }
-    .card-screen {
+@media only screen and (min-width: 800px) {
+    .card-screen{
         flex-direction: row;
-        max-width: 600px;
+        max-width: 753px;
     }
 
-}
+    .card-images img{
 
-
-
-
-
-
-
-
-
-
+        border-radius: 0.6rem 0 0 0.6rem ;
+    }
+  }
 
 
